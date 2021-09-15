@@ -1,0 +1,40 @@
+.popup {
+  width: 320px;
+  height: 550px;
+  display: block;
+  position: fixed;
+  top: 30%;
+  background-color: @white;
+  z-index: 3;
+  box-shadow: 0 0 5px 4px @shadow;
+
+  @media (min-width: @tablet) {
+    left: 224px;
+  }
+
+  @media (min-width: @desktop) {
+    left: 560px;
+  }
+
+  &__toggle-close {
+    width: 52px;
+    height: 52px;
+    background-color: @white;
+    padding: 0;
+    border: none;
+    position: absolute;
+    right: 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: "Montserrat SemiBold", sans-serif;
+    font-size: 25px;
+    line-height: 170%;
+    margin-top: 100px;
+  }
+
+  &__form {
+    margin-top: 50px;
+  }
+}

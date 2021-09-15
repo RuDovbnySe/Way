@@ -1,0 +1,111 @@
+.catalog {
+  margin-bottom: 125px;
+
+  @media (max-width: @tablet) {
+    text-align: center;
+    margin-bottom: 95px;
+  }
+
+  @media (max-width: @mobile-max) {
+    margin-top: 80px;
+  }
+
+  &__title {
+    font-family: "Montserrat SemiBold", sans-serif;
+    font-style: normal;
+    font-size: 55px;
+    line-height: 119%;
+    font-weight: 500;
+    color: @dark;
+    width: 360px;
+
+    @media (max-width: @tablet-max) {
+      font-size: 30px;
+      line-height: 150%;
+      font-weight: 600;
+      width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (max-width: @mobile-max) {
+      font-size: 24px;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-family: "Montserrat regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 144%;
+    color: @dark70;
+    width: 330px;
+
+    @media (max-width: @tablet-max) {
+      width: 345px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: @mobile-max) {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 100px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: @tablet-max) {
+      column-gap: 40px;
+      row-gap: 40px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    justify-content: center;
+    width: 350px;
+    height: 430px;
+
+    @media (max-width: @desktop - 1px) {
+      width: 288px;
+      height: 425px;
+    }
+  }
+
+  &__item-name {
+    font-family: "Montserrat medium", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 122%;
+    font-weight: 500;
+    color: @dark;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: calc(50% - 107px);
+    background-color: @white;
+    width: 215px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: auto;
+    height: auto;
+  }
+}

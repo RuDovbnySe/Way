@@ -1,0 +1,28 @@
+@desktop: 1440px;
+@tablet-max: 1439px;
+@tablet: 768px;
+@mobile-max:767px;
+@mobile: 320px;
+
+.visually-hidden {
+  display: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 290px;
+  padding: 0;
+
+  @media (min-width: @tablet) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1170px;
+  }
+}
+
+li {
+  list-style: none;
+}
